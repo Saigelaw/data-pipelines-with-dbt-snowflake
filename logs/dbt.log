@@ -1,0 +1,81 @@
+[0m14:15:23.054877 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cf9ecee70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cfa690740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cfc0f0fb0>]}
+
+
+============================== 14:15:23.057639 | 278208f8-e396-47bf-b2e9-cd5d2a4b6ccb ==============================
+[0m14:15:23.057639 [info ] [MainThread]: Running with dbt=1.8.6
+[0m14:15:23.058120 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/saigelaw-jenga/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:15:23.065187 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/saigelaw-jenga/.dbt')}
+[0m14:15:23.065601 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:15:55.772358 [debug] [MainThread]: Starter project path: /home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:15:55.777811 [info ] [MainThread]: 
+Your new dbt project "data_pipeline" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:15:55.778790 [info ] [MainThread]: Setting up your profile.
+[0m14:19:17.690914 [info ] [MainThread]: Profile data_pipeline written to /home/saigelaw-jenga/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:19:17.700244 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 234.67479, "process_user_time": 1.02328, "process_kernel_time": 0.087108, "process_mem_max_rss": "107900", "process_in_blocks": "4720", "process_out_blocks": "88"}
+[0m14:19:17.702293 [debug] [MainThread]: Command `dbt init` succeeded at 14:19:17.701955 after 234.68 seconds
+[0m14:19:17.703484 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cf9927a40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cf8afeff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x740cf8afffb0>]}
+[0m14:19:17.704924 [debug] [MainThread]: Flushing usage events
+[0m11:51:20.418388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178cda42990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178cd66b830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178cdadcd40>]}
+
+
+============================== 11:51:20.421285 | 93fb25b7-857b-4f46-8e5f-c544e1d4e9e2 ==============================
+[0m11:51:20.421285 [info ] [MainThread]: Running with dbt=1.8.6
+[0m11:51:20.421798 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/saigelaw-jenga/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m11:51:38.771908 [error] [MainThread]: Encountered an error:
+
+[0m11:51:38.782713 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/cli/requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/cli/main.py", line 470, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/task/init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/dbt/task/init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "/home/saigelaw-jenga/work/data engineering/project_1/venv/lib/python3.12/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m11:51:38.784677 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 18.396372, "process_user_time": 0.817465, "process_kernel_time": 0.07558, "process_mem_max_rss": "87076", "process_in_blocks": "1360", "process_out_blocks": "24", "command_success": false}
+[0m11:51:38.785899 [debug] [MainThread]: Command `dbt init` failed at 11:51:38.785671 after 18.40 seconds
+[0m11:51:38.786678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178cda42990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178ccf522a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7178ccc2a210>]}
+[0m11:51:38.787574 [debug] [MainThread]: Flushing usage events
+[0m11:55:38.139963 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7d39e900>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7d9a3e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7d9a3fb0>]}
+
+
+============================== 11:55:38.143111 | a66aa048-329f-4e10-8b55-94021d66dd4e ==============================
+[0m11:55:38.143111 [info ] [MainThread]: Running with dbt=1.8.6
+[0m11:55:38.143798 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/saigelaw-jenga/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m11:55:38.144338 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/saigelaw-jenga/work/data engineering/project_1/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:55:38.145382 [debug] [MainThread]: Resource report: {"command_name": "run", "command_wall_clock_time": 0.035307627, "process_user_time": 0.775144, "process_kernel_time": 0.065012, "process_mem_max_rss": "86144", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m11:55:38.146122 [debug] [MainThread]: Command `dbt run` failed at 11:55:38.146010 after 0.04 seconds
+[0m11:55:38.146499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7dbc6de0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7d0fa2a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x780d7d3f5820>]}
+[0m11:55:38.146896 [debug] [MainThread]: Flushing usage events
